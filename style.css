@@ -1,0 +1,1015 @@
+/* ========================================
+   基本設定
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Noto Sans JP", "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+    color: #26343b;
+    background-color: #ffffff;
+    line-height: 1.8;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* ========================================
+   共通設定
+======================================== */
+
+.container {
+    width: 90%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 110px 0;
+}
+
+.section-number {
+    color: #4d8293;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+.section h2 {
+    color: #123247;
+    font-family: "Playfair Display", "Yu Mincho", serif;
+    font-size: 50px;
+    line-height: 1.3;
+    margin-bottom: 25px;
+}
+
+
+/* ========================================
+   ヘッダー
+======================================== */
+
+.header {
+    width: 100%;
+    height: 75px;
+    background-color: rgba(255, 255, 255, 0.96);
+    border-bottom: 1px solid #eeeeee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    width: 90%;
+    max-width: 1180px;
+    height: 75px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #123247;
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-menu a {
+    color: #37464d;
+    font-size: 13px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s;
+}
+
+.nav-menu a::after {
+    content: "";
+    width: 0;
+    height: 1px;
+    background-color: #4d8293;
+
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #4d8293;
+}
+
+.nav-menu a:hover::after {
+    width: 100%;
+}
+
+
+/* ========================================
+   ヒーロー
+======================================== */
+
+.hero {
+    height: calc(100vh - 75px);
+    min-height: 600px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            120deg,
+            rgba(10, 39, 55, 0.90),
+            rgba(42, 99, 116, 0.50)
+        ),
+        linear-gradient(
+            135deg,
+            #123b52,
+            #6c9fac
+        );
+
+    overflow: hidden;
+}
+
+
+/* 海のような装飾 */
+
+.hero::before {
+    content: "";
+
+    width: 600px;
+    height: 600px;
+
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0.08);
+
+    position: absolute;
+    right: -200px;
+    top: -200px;
+}
+
+.hero::after {
+    content: "";
+
+    width: 450px;
+    height: 450px;
+
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0.05);
+
+    position: absolute;
+    right: 100px;
+    bottom: -300px;
+}
+
+
+.hero-content {
+    width: 90%;
+    max-width: 1180px;
+    margin: 0 auto;
+
+    position: relative;
+    z-index: 2;
+
+    color: white;
+}
+
+.subtitle {
+    font-size: 13px;
+    letter-spacing: 5px;
+    font-weight: 700;
+
+    margin-bottom: 20px;
+
+    color: #dbecef;
+}
+
+.hero h1 {
+    font-family: "Playfair Display", "Yu Mincho", serif;
+
+    font-size: clamp(50px, 7vw, 90px);
+
+    line-height: 1.15;
+
+    font-weight: 700;
+
+    margin-bottom: 25px;
+}
+
+.hero-text {
+    max-width: 600px;
+
+    color: #edf6f7;
+
+    font-size: 17px;
+
+    margin-bottom: 35px;
+}
+
+
+/* ========================================
+   ボタン
+======================================== */
+
+.button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 14px 25px;
+
+    background-color: white;
+    color: #123247;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    border-radius: 2px;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+
+    background-color: #dcecef;
+}
+
+
+/* ========================================
+   清水について
+======================================== */
+
+.about {
+    background-color: white;
+}
+
+.about-content {
+    max-width: 700px;
+}
+
+.about-content p {
+    color: #657177;
+
+    font-size: 16px;
+
+    margin-bottom: 18px;
+}
+
+.about-content p:first-child {
+    font-size: 21px;
+
+    color: #26343b;
+
+    font-weight: 500;
+}
+
+
+/* ========================================
+   観光スポット
+======================================== */
+
+.destinations {
+    background-color: #f5f3ee;
+}
+
+.section-description {
+    color: #707b80;
+
+    font-size: 15px;
+
+    margin-bottom: 40px;
+
+    max-width: 650px;
+}
+
+
+/* Destination Grid */
+
+.destination-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 22px;
+}
+
+
+/* Destination Card */
+
+.destination-card {
+    min-height: 390px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    padding: 30px;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            145deg,
+            #214d63,
+            #7ba6ae
+        );
+
+    transition: 0.4s;
+}
+
+
+/* card background */
+
+.destination-card:nth-child(1) {
+    background:
+        linear-gradient(
+            145deg,
+            #17455d,
+            #6e9eaa
+        );
+}
+
+.destination-card:nth-child(2) {
+    background:
+        linear-gradient(
+            145deg,
+            #735438,
+            #c49a68
+        );
+}
+
+.destination-card:nth-child(3) {
+    background:
+        linear-gradient(
+            145deg,
+            #154b6c,
+            #63a0b3
+        );
+}
+
+.destination-card:nth-child(4) {
+    background:
+        linear-gradient(
+            145deg,
+            #345844,
+            #9aae89
+        );
+}
+
+.destination-card:nth-child(5) {
+    background:
+        linear-gradient(
+            145deg,
+            #42332c,
+            #a97e54
+        );
+}
+
+
+.destination-card::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(5, 20, 30, 0.90),
+            rgba(5, 20, 30, 0.05)
+        );
+
+    z-index: 1;
+}
+
+
+.destination-card:hover {
+    transform: translateY(-6px);
+}
+
+
+.card-content {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+}
+
+
+.category {
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    color: #d9e8eb;
+
+    font-weight: 700;
+}
+
+
+.destination-card h3 {
+    font-family: "Playfair Display", "Yu Mincho", serif;
+
+    font-size: 32px;
+
+    line-height: 1.35;
+
+    margin: 7px 0 12px;
+}
+
+
+.destination-card p {
+    font-size: 13px;
+
+    line-height: 1.8;
+
+    color: #edf4f5;
+
+    max-width: 500px;
+
+    margin-bottom: 12px;
+}
+
+
+.destination-card a {
+    display: inline-block;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+
+    padding-bottom: 3px;
+
+    transition: 0.3s;
+}
+
+.destination-card a:hover {
+    letter-spacing: 1px;
+}
+
+
+/* ========================================
+   旅行プラン
+======================================== */
+
+.plan {
+    background-color: white;
+}
+
+.timeline {
+    width: 100%;
+
+    max-width: 850px;
+
+    margin: 60px auto 0;
+
+    position: relative;
+}
+
+
+/* 縦線 */
+
+.timeline::before {
+    content: "";
+
+    position: absolute;
+
+    left: 91px;
+
+    top: 0;
+
+    bottom: 0;
+
+    width: 1px;
+
+    background-color: #d7d9d8;
+}
+
+
+.timeline-item {
+    display: grid;
+
+    grid-template-columns: 70px 45px 1fr;
+
+    min-height: 120px;
+
+    align-items: start;
+}
+
+
+.time {
+    color: #123247;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    padding-top: 17px;
+}
+
+
+.timeline-item::before {
+    content: "";
+
+    width: 11px;
+
+    height: 11px;
+
+    border-radius: 50%;
+
+    border: 3px solid #4d8293;
+
+    background-color: white;
+
+    margin: 22px auto;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.timeline-content {
+    background-color: #f7f6f2;
+
+    padding: 18px 22px;
+
+    margin-bottom: 18px;
+}
+
+
+.timeline-content span {
+    color: #4d8293;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.timeline-content h3 {
+    color: #123247;
+
+    font-size: 19px;
+
+    margin: 2px 0 5px;
+}
+
+
+.timeline-content p {
+    color: #727d82;
+
+    font-size: 13px;
+}
+
+
+/* ========================================
+   文化・体験
+======================================== */
+
+.culture {
+    background-color: #102f44;
+
+    color: white;
+}
+
+.culture .section-number {
+    color: #a7c8d0;
+}
+
+.culture h2 {
+    color: white;
+}
+
+
+.culture-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 1px;
+
+    background-color: rgba(255, 255, 255, 0.15);
+
+    margin-top: 45px;
+}
+
+
+.culture-card {
+    min-height: 260px;
+
+    padding: 35px 25px;
+
+    background-color: #102f44;
+
+    transition: 0.3s;
+}
+
+
+.culture-card:hover {
+    background-color: #183e54;
+}
+
+
+.icon {
+    font-size: 35px;
+
+    margin-bottom: 20px;
+}
+
+
+.culture-card h3 {
+    font-size: 19px;
+
+    margin-bottom: 10px;
+}
+
+
+.culture-card p {
+    color: #c8d7db;
+
+    font-size: 13px;
+
+    line-height: 1.9;
+}
+
+
+/* ========================================
+   おもしろいエピソード
+======================================== */
+
+.episode {
+    background-color: #f5f3ee;
+}
+
+
+.episode h2 {
+    max-width: 700px;
+
+    margin-bottom: 40px;
+}
+
+
+.episode-box {
+    max-width: 800px;
+
+    padding: 45px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #1a455b,
+            #4f8493
+        );
+
+    color: white;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.episode-box::before {
+    content: "「";
+
+    position: absolute;
+
+    right: 30px;
+    top: -50px;
+
+    font-family: serif;
+
+    font-size: 220px;
+
+    color: rgba(255, 255, 255, 0.08);
+}
+
+
+.episode-box span {
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    color: #c7dce1;
+
+    font-weight: 700;
+}
+
+
+.episode-box h3 {
+    font-family: "Playfair Display", "Yu Mincho", serif;
+
+    font-size: 35px;
+
+    line-height: 1.4;
+
+    margin: 15px 0;
+}
+
+
+.episode-box p {
+    color: #e2edef;
+
+    font-size: 14px;
+
+    max-width: 600px;
+
+    margin-bottom: 22px;
+}
+
+
+.episode-box a {
+    display: inline-block;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+
+    padding-bottom: 4px;
+}
+
+
+/* ========================================
+   フッター
+======================================== */
+
+.footer {
+    background-color: #081d2b;
+
+    color: white;
+
+    padding: 55px 0;
+}
+
+
+.footer h3 {
+    font-size: 20px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 7px;
+}
+
+
+.footer p {
+    color: #9aadb4;
+
+    font-size: 12px;
+}
+
+
+.footer .copyright {
+    margin-top: 25px;
+
+    color: #71868f;
+}
+
+
+/* ========================================
+   ホバーアニメーション
+======================================== */
+
+.destination-card,
+.culture-card,
+.button,
+.episode-box a {
+    will-change: transform;
+}
+
+
+/* ========================================
+   タブレット
+======================================== */
+
+@media screen and (max-width: 900px) {
+
+    .nav-menu {
+        gap: 18px;
+    }
+
+    .nav-menu a {
+        font-size: 12px;
+    }
+
+    .section {
+        padding: 80px 0;
+    }
+
+    .section h2 {
+        font-size: 42px;
+    }
+
+    .destination-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .culture-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ========================================
+   スマートフォン
+======================================== */
+
+@media screen and (max-width: 650px) {
+
+    .header,
+    .navbar {
+        height: 65px;
+    }
+
+    .logo {
+        font-size: 15px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .hero {
+        height: calc(100vh - 65px);
+
+        min-height: 560px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero-text {
+        font-size: 15px;
+    }
+
+    .section {
+        padding: 70px 0;
+    }
+
+    .section h2 {
+        font-size: 37px;
+    }
+
+    .destination-card {
+        min-height: 350px;
+    }
+
+    .destination-card h3 {
+        font-size: 27px;
+    }
+
+    .timeline::before {
+        left: 62px;
+    }
+
+    .timeline-item {
+        grid-template-columns: 48px 30px 1fr;
+    }
+
+    .time {
+        font-size: 12px;
+    }
+
+    .timeline-content {
+        padding: 15px;
+    }
+
+    .timeline-content h3 {
+        font-size: 16px;
+    }
+
+    .culture-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .culture-card {
+        min-height: auto;
+    }
+
+    .episode-box {
+        padding: 30px 25px;
+    }
+
+    .episode-box h3 {
+        font-size: 27px;
+    }
+
+}
+
+
+/* ========================================
+   小さいスマートフォン
+======================================== */
+
+@media screen and (max-width: 420px) {
+
+    .container {
+        width: 88%;
+    }
+
+    .hero-content {
+        width: 88%;
+    }
+
+    .hero h1 {
+        font-size: 41px;
+    }
+
+    .section h2 {
+        font-size: 32px;
+    }
+
+    .destination-card {
+        min-height: 320px;
+
+        padding: 23px;
+    }
+
+    .destination-card h3 {
+        font-size: 24px;
+    }
+
+}
+.hero {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 2;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    color: white;
+}
