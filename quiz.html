@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>清水クイズ | 静岡の旅</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+
+        <nav class="navbar">
+
+            <a class="logo" href="index.html">
+                静岡の旅
+            </a>
+
+            <button class="menu-toggle" aria-label="メニュー">
+                ☰
+            </button>
+
+            <ul class="nav-menu">
+
+                <li>
+                    <a href="index.html">ホーム</a>
+                </li>
+
+                <li>
+                    <a href="about.html">清水について</a>
+                </li>
+
+                <li>
+                    <a href="index.html#destinations">
+                        観光スポット
+                    </a>
+                </li>
+
+                <li>
+                    <a href="food.html">グルメ</a>
+                </li>
+
+                <li>
+                    <a href="gallery.html">ギャラリー</a>
+                </li>
+
+                <li>
+                    <a href="access.html">アクセス</a>
+                </li>
+
+                <li>
+                    <a class="active" href="quiz.html">
+                        クイズ
+                    </a>
+                </li>
+
+                <li>
+                    <button id="themeToggle" class="theme-btn">
+                        🌙
+                    </button>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Main -->
+    <main>
+
+        <!-- Hero -->
+        <section class="page-hero">
+
+            <img
+                src="images/shimizu-port.jfif"
+                alt="清水港"
+            >
+
+            <div>
+
+                <p>
+                    SHIMIZU QUIZ
+                </p>
+
+                <h1>
+                    清水クイズ
+                </h1>
+
+                <span>
+                    清水について楽しく学ぼう
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- Quiz -->
+        <section class="section">
+
+            <div class="container narrow">
+
+                <p class="section-number">
+                    01 — QUIZ
+                </p>
+
+                <h2>
+                    清水を知っていますか？
+                </h2>
+
+                <p class="lead">
+                    クイズに答えて、清水について
+                    どれくらい知っているか試してみよう！
+                </p>
+
+
+                <div class="quiz-box">
+
+
+                    <!-- Question 1 -->
+                    <div class="quiz-question">
+
+                        <h3>
+                            Q1. 清水の観光で楽しめる代表的な景色は？
+                        </h3>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="q1"
+                                value="a"
+                            >
+                            A. 海と富士山
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="q1"
+                                value="b"
+                            >
+                            B. 砂漠とピラミッド
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="q1"
+                                value="c"
+                            >
+                            C. 氷河とオーロラ
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="q1"
+                                value="d"
+                            >
+                            D. ジャングルと滝
+                        </label>
+
+                    </div>
+
+
+                    <!-- Question 2 -->
+                    <div class="quiz-question">
+
+                        <h3>
+                            Q2. 清水で楽しめる海の幸はどれ？
+                        </h3>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="q2"
+                                value="a"
+                            >
+                            A. まぐろ
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="q2"
+                                value="b"
+                            >
+                            B. パイナップル
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="q2"
+                                value="c"
+                            >
+                            C. バナナ
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="q2"
+                                value="d"
+                            >
+                            D. りんご
+                        </label>
+
+                    </div>
+
+
+                    <!-- Question 3 -->
+                    <div class="quiz-question">
+
+                        <h3>
+                            Q3. 清水の観光スポットとして紹介されている場所は？
+                        </h3>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="q3"
+                                value="a"
+                            >
+                            A. 三保の松原
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="q3"
+                                value="b"
+                            >
+                            B. 東京タワー
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="q3"
+                                value="c"
+                            >
+                            C. 大阪城
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="q3"
+                                value="d"
+                            >
+                            D. 札幌時計台
+                        </label>
+
+                    </div>
+
+
+                    <!-- Question 4 -->
+                    <div class="quiz-question">
+
+                        <h3>
+                            Q4. 静岡を代表する食材のひとつは？
+                        </h3>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="q4"
+                                value="a"
+                            >
+                            A. 桜えび
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="q4"
+                                value="b"
+                            >
+                            B. チーズ
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="q4"
+                                value="c"
+                            >
+                            C. チョコレート
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="q4"
+                                value="d"
+                            >
+                            D. パン
+                        </label>
+
+                    </div>
+
+
+                    <!-- Submit -->
+                    <button
+                        id="quizSubmit"
+                        class="quiz-button"
+                        type="button"
+                    >
+                        答えを確認する
+                    </button>
+
+
+                    <!-- Result -->
+                    <div
+                        id="quizResult"
+                        class="quiz-result">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <h3>
+                静岡の旅
+            </h3>
+
+            <p>
+                清水をもっと知って、もっと楽しもう。
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Back to Top -->
+    <button
+        id="topBtn"
+        class="top-btn">
+        ↑
+    </button>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
