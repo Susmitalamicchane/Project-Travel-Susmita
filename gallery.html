@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ギャラリー | 静岡の旅</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+
+        <nav class="navbar">
+
+            <a class="logo" href="index.html">
+                静岡の旅
+            </a>
+
+            <button class="menu-toggle" aria-label="メニュー">
+                ☰
+            </button>
+
+            <ul class="nav-menu">
+
+                <li>
+                    <a href="index.html">
+                        ホーム
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        清水について
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html#destinations">
+                        観光スポット
+                    </a>
+                </li>
+
+                <li>
+                    <a href="food.html">
+                        グルメ
+                    </a>
+                </li>
+
+                <li>
+                    <a class="active" href="gallery.html">
+                        ギャラリー
+                    </a>
+                </li>
+
+                <li>
+                    <a href="access.html">
+                        アクセス
+                    </a>
+                </li>
+
+                <li>
+                    <a href="quiz.html">
+                        クイズ
+                    </a>
+                </li>
+
+                <li>
+                    <button id="themeToggle" class="theme-btn">
+                        🌙
+                    </button>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Main -->
+    <main>
+
+        <!-- Hero -->
+        <section class="page-hero">
+
+            <img
+                src="images/shimizu-port.jfif"
+                alt="清水港"
+            >
+
+            <div>
+
+                <p>
+                    SHIMIZU GALLERY
+                </p>
+
+                <h1>
+                    ギャラリー
+                </h1>
+
+                <span>
+                    清水の美しい景色を見てみよう
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- Gallery -->
+        <section class="section">
+
+            <div class="container">
+
+                <p class="section-number">
+                    01 — GALLERY
+                </p>
+
+                <h2>
+                    清水の風景
+                </h2>
+
+                <p class="lead">
+                    清水で出会える美しい場所や
+                    観光スポットを写真で紹介します。
+                </p>
+
+
+                <div class="gallery-grid">
+
+
+                    <!-- Shimizu -->
+                    <div class="gallery-item reveal">
+
+                        <img
+                            src="images/shimizu.jfif"
+                            alt="清水"
+                            class="gallery-image"
+                        >
+
+                        <div class="gallery-caption">
+                            <h3>清水</h3>
+                            <p>Shimizu</p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Shimizu Port -->
+                    <div class="gallery-item reveal">
+
+                        <img
+                            src="images/shimizu-port.jfif"
+                            alt="清水港"
+                            class="gallery-image"
+                        >
+
+                        <div class="gallery-caption">
+                            <h3>清水港</h3>
+                            <p>Shimizu Port</p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Cruise -->
+                    <div class="gallery-item reveal">
+
+                        <img
+                            src="images/cruise.jfif"
+                            alt="クルーズ"
+                            class="gallery-image"
+                        >
+
+                        <div class="gallery-caption">
+                            <h3>クルーズ</h3>
+                            <p>Cruise</p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Dream Plaza -->
+                    <div class="gallery-item reveal">
+
+                        <img
+                            src="images/dreamplaza.jfif"
+                            alt="ドリームプラザ"
+                            class="gallery-image"
+                        >
+
+                        <div class="gallery-caption">
+                            <h3>ドリームプラザ</h3>
+                            <p>S-Pulse Dream Plaza</p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Kunozan -->
+                    <div class="gallery-item reveal">
+
+                        <img
+                            src="images/kunozan.jfif"
+                            alt="久能山東照宮"
+                            class="gallery-image"
+                        >
+
+                        <div class="gallery-caption">
+                            <h3>久能山東照宮</h3>
+                            <p>Kunozan Toshogu</p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Miho -->
+                    <div class="gallery-item reveal">
+
+                        <img
+                            src="images/miho-matsubara.jfif"
+                            alt="三保の松原"
+                            class="gallery-image"
+                        >
+
+                        <div class="gallery-caption">
+                            <h3>三保の松原</h3>
+                            <p>Miho no Matsubara</p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+
+        <button
+            id="lightboxClose"
+            class="lightbox-close"
+            aria-label="閉じる">
+            ×
+        </button>
+
+        <button
+            id="lightboxPrev"
+            class="lightbox-prev"
+            aria-label="前の写真">
+            ❮
+        </button>
+
+        <img
+            id="lightboxImage"
+            src=""
+            alt="拡大画像"
+        >
+
+        <button
+            id="lightboxNext"
+            class="lightbox-next"
+            aria-label="次の写真">
+            ❯
+        </button>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <h3>
+                静岡の旅
+            </h3>
+
+            <p>
+                清水の旅を楽しもう。
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Back to Top -->
+    <button
+        id="topBtn"
+        class="top-btn">
+        ↑
+    </button>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
